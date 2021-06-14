@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Comfy House</title>
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="title">
+        <h1>On CRUD</h1>
+        <p>Thing i forgot to dot</p>
+    </div>
+    <div class="form">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+            <input type="text" id="add-todo" placeholder="Thing To-Do">
+            <input type="submit" value="Add" class="btn btn-primary">
+            </form>
+
+            <p>You have:</p>
+            <p id="counter"></p>
+
+            <table>
+                <tr class="to-do">
+                    <th><h3>To-Do :</h3></th>
+                </tr>
+                <tbody id="tasks">
+
+                </tbody>
+            </table>
+        
+    </div>
+
+    <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST" id="save-edit">
+            <input type="text" id="edit-todo">
+            <input type="submit" value="Save" class="btn btn-success"><a onclick="CloseInput()" aria-label="Close">&#10060;</a>
+        </form>
+    </div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
